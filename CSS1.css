@@ -28,15 +28,20 @@ nav ul li a {
 
 .content {
     padding: 20px;
+    text-align: center;
 }
 
 .portfolio-item {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .portfolio-item img {
-    max-width: 100%;
+    max-width: 100px;
     height: auto;
+    object-fit: cover; 
+    border: 2px solid #ccc;
+    text-align: center;
 }
 
 footer {
@@ -45,3 +50,4 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
