@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-item {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    max-width: 350px;
+    height: auto;
+    object-fit: cover; 
+    border: 2px solid #ccc;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
