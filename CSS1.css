@@ -1,19 +1,26 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Sarabun', Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #2c3e50;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
@@ -27,7 +34,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 nav ul li a:hover {
@@ -35,16 +42,31 @@ nav ul li a:hover {
 }
 
 .content {
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.content h2 {
     text-align: center;
+    color: #2c3e50;
+}
+
+.content p {
+    line-height: 1.8;
+    text-align: justify;
 }
 
 .portfolio-item {
-    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .portfolio-item img {
-    max-width: 350px;
+    max-width: 100px;
     height: auto;
     object-fit: cover;
     border: 2px solid #ccc;
@@ -53,7 +75,7 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #333;
+    background-color: #2c3e50;
     color: white;
     text-align: center;
     padding: 10px 0;
