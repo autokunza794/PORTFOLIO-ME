@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -12,18 +13,25 @@ header {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 .content {
@@ -33,15 +41,15 @@ nav ul li a {
 
 .portfolio-item {
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .portfolio-item img {
     max-width: 350px;
     height: auto;
-    object-fit: cover; 
+    object-fit: cover;
     border: 2px solid #ccc;
-    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -49,5 +57,11 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
+footer p {
+    margin: 0;
+}
