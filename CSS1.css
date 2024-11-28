@@ -1,53 +1,89 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Sarabun', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background-color: #333;
+    background-color: #2c3e50;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
 .content {
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.content h2 {
     text-align: center;
+    color: #2c3e50;
+}
+
+.content p {
+    line-height: 1.8;
+    text-align: justify;
 }
 
 .portfolio-item {
-    margin-bottom: 20px;
     text-align: center;
+    margin-top: 20px;
 }
 
 .portfolio-item img {
     max-width: 100px;
     height: auto;
-    object-fit: cover; 
+    object-fit: cover;
     border: 2px solid #ccc;
-    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: #333;
+    background-color: #2c3e50;
     color: white;
     text-align: center;
     padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
+footer p {
+    margin: 0;
+}
